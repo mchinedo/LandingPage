@@ -1,0 +1,231 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manipulating the DOM</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list"></ul>
+      </nav>
+    </header>
+    <main>
+      <header class="main__hero">
+        <h1>
+          The <span style="color: black"><i>Black</i></span
+          >@<span style="color: #4d2600">Brown</span> Experience
+        </h1>
+        <img src="images/cover.jpg" alt="BSU image" />
+        <figcaption>
+          The Class of 2022 during their Freshman Year at the Welcome B(l)ack
+          BBQ
+        </figcaption>
+      </header>
+
+      <!-- Each Section has an ID (used for the anchor) and
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+      <section id="section1" data-nav="Overview" class="your-active-class">
+        <div class="landing__container">
+          <h2>
+            What is <span style="color: black"><i>Black</i></span
+            >@<span style="color: #4d2600">Brown</span>?
+          </h2>
+          <img src="images/bsu.webp" alt="Black Convocation Photo" />
+          <figcaption>
+            Shades of Brown Acapella Group Performing at the first annual Black
+            Convocation
+          </figcaption>
+          <p>
+            Black@Brown is a term created by Black Students at Brown University
+            to provide a space for Black Students navigating a predominately
+            white institution. From being the title of GroupMe Chat names, to
+            slogans on t-shirts, the term "Black@Brown" became very popular and
+            is a huge part of the day to day lives of Black students at Brown.
+          </p>
+
+          <p>
+            Throughout my time at Brown, I've gotten several requests from
+            aspiring and incoming Black Brown University students about what it
+            is really like being a Black Person at Brown University. Therefore,
+            I decided to make this landing page highlighting the major events
+            that the Black community looks forward to every year!
+          </p>
+
+          <p>
+            There are numerous amounts of events and traditions in the Black
+            community, and my hope is that one day, all interested students will
+            get to experience them! In the meantime, I've listed 3 major events
+            below to provide a quick glimpse into what it's like being
+            "Black@Brown"<br />
+            <br />I hope you enjoy!
+          </p>
+        </div>
+      </section>
+      <section id="section2" data-nav="BSU Showcase">
+        <div class="landing__container" id="showcase">
+          <h2 style="color: black">BSU Showcase</h2>
+          <img src="images/showcase.png" alt="Photo from BSU Showcase" />
+          <figcaption>
+            Maryclare Chinedo and Faith Hardy posing after successfully hosting
+            the 2021-2022 BSU Showcase
+          </figcaption>
+          <p style="color: black">
+            The Annual BSU Pageant, now entitled Black Excellence Showcase, is
+            an event to celebrate Black excellence, Black talent, and Black
+            beauty. It is an important moment during which we dedicate ourselves
+            to Black joy.
+          </p>
+
+          <p style="color: black">
+            Every year, the pageant is judged by a panel of professional members
+            of our community and the previous year's pageant winners. The
+            showcase winners win prizes!
+          </p>
+
+          <p style="color: black">
+            Click the button below to see videos and photos from this event!
+          </p>
+          <button
+            type="button"
+            name="button"
+            id="showcaseButton"
+            onclick="location.href = 'https://www.brownbsu.com/copy-of-2021-black-convocation-1'"
+          >
+            Media from 2021-2022 BSU Showcase
+          </button>
+        </div>
+      </section>
+      <section id="section3" data-nav="BAD Dinner">
+        <div class="landing__container">
+          <h2>Black Appreciation Dinner (BAD)</h2>
+          <img src="images/BAD.jpg" alt="Photo from BAD Dinner" />
+          <figcaption id="bad">
+            The hosts of the 2022 Bad Dinner (Maryclare Chinedo and Aquielle
+            Person) smiling for the camera
+          </figcaption>
+          <p>
+            The Black Appreciation Dinner, also known as B.A.D, is an annual
+            event hosted by the Black Heritage Series, which is a subgroup under
+            the Brown Center for Students of Color whose goal is to create
+            spaces on campus for identifying individuals. The Black Heritage
+            Series collaborates with other Black organziations such as The
+            League of Black Women, Black Students Association (BSU), and African
+            Students Association (AfriSA) to put together the Black Appreciation
+            Dinner
+          </p>
+
+          <p>
+            The Black Appreciation Dinner is an event that aims to celebrate joy
+            and excellence in the Black Community at Brown! This night is filled
+            with performances, amazing food, faculty awards, senior
+            appreciation, and more! <br /><br />BAD is always an event to look
+            forward to!
+          </p>
+          <button
+            type="button"
+            name="button"
+            id="badButton"
+            onclick="location.href = 'https://www.flickr.com/photos/browntwc/albums/72177720297102837/with/51916867915/'"
+          >
+            Media from 2021-2022 BAD Dinner
+          </button>
+        </div>
+      </section>
+      <section id="section4" data-nav="AfriSA Culture Show">
+        <div class="landing__container">
+          <h2>AfriSA Culture Show</h2>
+          <img src="images/afrisa.jpg" alt="Photo from AfriSA Culture Show" />
+          <figcaption id="afrisa">
+            David Onabanjo, Maryclare Chinedo and Grace Ouedrago performing
+            their Senior Dance Piece
+          </figcaption>
+          <p>
+            The African Students Association, also known as AfriSA, is a
+            cultural organization that aims to provide spaces for students who
+            identify as African or are interested in learning more about African
+            Culture and traditions.
+          </p>
+
+          <p>
+            The AfriSA Annual Culture Show is a chance for students to celebrate
+            and witness different aspects of African Culture! This event is one
+            of the biggest events held on campus! It’s a night filled with
+            amazing food, speakers, community and performances from Brown dance
+            groups as well as groups from schools such as MIT, Harvard, Yale,
+            Columbia etc. <br /><br />The AfriSA Culture Show is definitely an
+            event to see!
+          </p>
+          <button
+            type="button"
+            name="button"
+            id="afrisaButton"
+            onclick="location.href = 'https://drive.google.com/drive/folders/1AA-nvsa1ZNpTT2uj_ke__oyF5Lb1fhBO'"
+          >
+            Media from 2021-2022 Culture Show
+          </button>
+        </div>
+      </section>
+      <section id="section5" data-nav="More Info">
+        <div class="landing__container">
+          <h2>Want to learn more about Black@Brown?</h2>
+          <p>
+            If you enjoyed learning about some of the major events thrown by the
+            Black@Brown community, and you would like to stay in the loop,
+            <span>click</span> on the student group that you're interested in to
+            follow their instagram accounts!
+          </p>
+          <div class="socials">
+            <a href="https://www.instagram.com/brownbsu/">
+              <img src="images/bsulogo.jpeg" alt="BSU Instagram"
+            /></a>
+            <a href="https://www.instagram.com/bcscheritageseries/">
+              <img src="images/bhs.jpeg" alt="Heritage Series Instagram"
+            /></a>
+            <a href="https://www.instagram.com/afrisabrown/">
+              <img src="images/afrisalogo.jpeg" alt="AfriSA Instagram"
+            /></a>
+          </div>
+
+          <p>
+            You can also <span>sign up</span> for the Black@Brown Listserv so
+            that you can be informed about upcoming Black events as well as
+            network with current Black@Brown students!
+          </p>
+
+          <div class="signup">
+            <form>
+              <label for="”fname”">First Name:</label><br />
+              <input type="”text”" id="“fname”" name="”fname”" /><br />
+              <label for="”lname”">Last Name:</label><br />
+              <input type="”text”" id="“lname”" name="”lname”" /><br />
+              <label for="email">Email Address:</label><br />
+              <input type="”text”" id="“email”" name="”email”" /><br />
+              <input type="submit" class="submitbutton" />
+            </form>
+          </div>
+
+          <p>Best of Luck!</p>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer">
+      <p>&copy Udacity</p>
+    </footer>
+    <script src="js/app.js" charset="utf-8"></script>
+  </body>
+</html>
